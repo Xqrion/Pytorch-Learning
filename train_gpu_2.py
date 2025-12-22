@@ -63,7 +63,7 @@ total_train_steps = 0
 
 total_test_steps = 0
 
-epoch = 10#循环轮数
+epoch = 30#循环轮数
 
 #添加tensorboard
 writer = SummaryWriter("./logs/train")
@@ -116,7 +116,7 @@ for i in range(epoch):
     total_test_steps += 1
 
     #保存每一轮的结果
-    torch.save(mynn , "models/xqrion_{}.pth".format(i))
+    torch.save(mynn , "models/gpu/xqrion_gpu2_{}.pth".format(i))
     print("第{}轮的模型保存了".format(i))
 
 

@@ -1,3 +1,5 @@
+#就是拿已经训练好的copy一下,叫预训练hhh
+
 import torchvision.datasets
 from torch import nn
 from torchvision import transforms
